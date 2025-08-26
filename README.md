@@ -27,7 +27,7 @@ Usage: make <target>
 
 ![web](./misc/web.gif)
 
-[https://web.d3fau1t.net](https://web.d3fau1t.net)
+[https://web.d3fau1t.net/mnist](https://web.d3fau1t.net/mnist)
 
 ### Train
 
