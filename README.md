@@ -39,4 +39,31 @@ Usage: make <target>
 
 ### Inference
 
+#### CLI
+
+```bash
+> make extract-sample
+uv run python -m src.extract_sample
+테스트 데이터에서 10개 샘플을 추출합니다...
+저장됨: sample_001_label_8.png (레이블: 8)
+저장됨: sample_002_label_0.png (레이블: 0)
+저장됨: sample_006_label_6.png (레이블: 6)
+...
+
+모든 샘플이 /Users/d3fau1t/Workspace/Huray/mnist-pure-python/images에 저장되었습니다.
+> make inference img=images/sample_001_label_8.png
+uv run python -m inference images/sample_001_label_8.png
+(8, 0.4259532121566595)
+> make inference img=images/sample_002_label_0.png
+uv run python -m inference images/sample_002_label_0.png
+(0, 0.9978939568013736)
+> make inference img=images/sample_006_label_6.png
+uv run python -m inference images/sample_006_label_6.png
+(6, 0.8483992009001357)
+```
+
+![inference](./misc/inference.png)
+
+#### GUI
+
 ![local-demo](./misc/local-demo.gif)
